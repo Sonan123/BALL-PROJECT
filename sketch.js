@@ -23,13 +23,13 @@ function setup() {
 
 	rope1 = new Rope (bob1.body,roof.body,-100,0);
 	World.add(world, rope1);
-	rope2 = new Rope (bob2.body,roof.body,-100,0);
+	rope2 = new Rope (bob2.body,roof.body,-50,0);
 	World.add(world, rope2);
-	rope3 = new Rope (bob3.body,roof.body,-100,0);
+	rope3 = new Rope (bob3.body,roof.body,0,0);
 	World.add(world, rope3);
-	rope4 = new Rope (bob4.body,roof.body,-100,0);
+	rope4 = new Rope (bob4.body,roof.body,50,0);
 	World.add(world, rope4);
-	rope5 = new Rope (bob5.body,roof.body,-100,0);
+	rope5 = new Rope (bob5.body,roof.body,100,0);
 	World.add(world, rope5);
 
 	Engine.run(engine);
@@ -41,7 +41,7 @@ function setup() {
 
 function draw() {
   rectMode(CENTER);
-  background("white");
+  background("lightblue");
   Engine.update(engine);
 
   roof.display();
@@ -51,20 +51,20 @@ function draw() {
   bob3.display();
   bob4.display();
   bob5.display();
-
-  rope1.dispaly();
-  rope2.dispaly();
-  rope3.dispaly();
-  rope4.dispaly();
-  rope5.dispaly();
+  rope1.display();
+  rope2.display();
+  rope3.display();
+  rope4.display();
+  rope5.display();
   
   
 }
 function keyPressed(){
 
- if(keyPressed===32){
+ 
 	 Matter.Body.applyForce(bob1.body,bob1.body.position,{x:-730,y:0});	
- }
+ 
 }
+
 
 

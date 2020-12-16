@@ -11,7 +11,7 @@ class Rope{
     World.add(world,this.rope); 
     }
     display(){
-        var point1 = this.rope.bodyA.postiton;
+        var point1 = this.rope.bodyA.position;
         var point2 = this.rope.bodyB.position;
     
         strokeWeight(2);

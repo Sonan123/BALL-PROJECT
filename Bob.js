@@ -15,7 +15,7 @@ class Bob {
 
 
 display(){
-    Push();
+    push();
     ellipseMode(RADIUS);
     fill(254,0,255);
     ellipse(this.body.position.x,this.body.position.y,25,25);

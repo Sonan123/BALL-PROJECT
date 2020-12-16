@@ -9,7 +9,7 @@ display(){
     push()
     rectMode(CENTER);
     fill(128,128,128)
-    rect(this.body.postition.x , this.body.postition.y,this.width,this.height);
+    rect(this.body.position.x , this.body.position.y,this.width,this.height);
     pop();
 }
 }
